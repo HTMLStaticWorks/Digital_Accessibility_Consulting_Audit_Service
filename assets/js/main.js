@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 3. Active Nav Link Highlighting
-    const currentPath = window.location.pathname.split('/').pop() || 'home-1.html';
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
