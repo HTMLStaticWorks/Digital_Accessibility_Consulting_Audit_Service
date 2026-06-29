@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Favicon -->
+    <link rel='icon' type='image/svg+xml' href='favicon.svg'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Details | WCAG 2.2 Auditing | Alex Carter</title>
+    <meta name="description" content="Detailed look at my WCAG 2.2 auditing methodology, screen reader testing tools, and final compliance deliverables.">
+    <!-- Bootstrap CSS -->
+    <link id="bootstrap-style" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Custom Style sheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <nav class="navbar navbar-expand-xl fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="home-1.html" aria-label="AccessAudit Portfolio Home">
+                <svg width="180" height="50" viewBox="0 0 180 50" xmlns="http://www.w3.org/2000/svg" fill="none" class="navbar-logo-svg text-primary">
+                    <circle cx="25" cy="25" r="20" stroke="currentColor" stroke-width="2.5" />
+                    <circle cx="25" cy="15" r="4.5" fill="currentColor" />
+                    <path d="M15 22h20M25 22v15M19 37l6-15 6 15" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <text x="55" y="32" font-family="'Outfit', sans-serif" font-size="20" font-weight="580" fill="currentColor">AccessAudit</text>
+                </svg>
+            </a>
+
+            
+
+            <!-- Hamburger Button for Mobile -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="bi bi-list fs-1 text-primary"></span>
+            </button>
+
+            <!-- Desktop Nav Menu -->
+            <div class="collapse navbar-collapse d-none d-xl-flex justify-content-between">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item"><a class="nav-link" href="home-1.html">Home 1</a></li><li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="d-flex gap-2 align-items-center"><button class="toggle-btn theme-toggle-btn" aria-label="Toggle dark mode"></button><button class="toggle-btn rtl-toggle-btn" aria-label="Toggle direction"></button><a href="login.html" class="btn-custom-secondary btn-text py-2">Login</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Navigation (Mobile) -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <ul class="navbar-nav gap-3 text-center">
+                <li class="nav-item"><a class="nav-link" href="home-1.html">Home 1</a></li><li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="d-flex flex-column gap-2 mt-4 text-center">
+                <div class="d-flex justify-content-center gap-2 mb-3">
+                    <button class="toggle-btn theme-toggle-btn" aria-label="Toggle dark mode"></button><button class="toggle-btn rtl-toggle-btn" aria-label="Toggle direction"></button>
+                </div>
+                <a href="login.html" class="btn-custom-secondary btn-text w-100 py-2">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="hero-section text-center position-relative" style="background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center; padding: 10rem 0 8rem 0;">
+            <div class="hero-overlay"></div>
+            <div class="container hero-container position-relative z-2">
+                <h1 class="h1-title mb-4 text-white">WCAG 2.2 Auditing</h1>
+                <p class="body-text fs-5 max-width-600 mx-auto text-white-50">Complete diagnostic analysis of your digital layout to build an open, compliant web experience.</p>
+            </div>
+        </section>
+
+        <!-- 2. Details Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-8">
+                        <h2 class="h2-title mb-4">Comprehensive Manual & Screen Reader Testing</h2>
+                        <p class="body-text mb-4 text-muted">While automated scanners can check simple guidelines like contrast ratios and image alt tags, they miss up to 70% of accessibility issues. I conduct rigorous manual screen reader tests using NVDA, JAWS, and VoiceOver to ensure actual accessibility.</p>
+                        
+                        <h3 class="h3-title fs-4 mb-3">What My Audit Covers:</h3>
+                        <ul class="list-unstyled d-flex flex-column gap-3 mb-5">
+                            <li><i class="bi bi-check-circle text-primary me-2"></i> <strong>Keyboard Operability:</strong> Validating that all interactive elements are fully focusable and reachable without a mouse.</li>
+                            <li><i class="bi bi-check-circle text-primary me-2"></i> <strong>Focus Management:</strong> Ensuring logical focus paths and locking focus within active modals or overlays.</li>
+                            <li><i class="bi bi-check-circle text-primary me-2"></i> <strong>ARIA & Semantics:</strong> Verifying custom controls declare correct names, roles, and states using screen reader alerts.</li>
+                            <li><i class="bi bi-check-circle text-primary me-2"></i> <strong>Color Contrast:</strong> Testing contrast layouts against the 4.5:1 ratio threshold for body copy.</li>
+                        </ul>
+
+                        <h3 class="h3-title fs-4 mb-3">Deliverables</h3>
+                        <p class="body-text text-muted mb-4">You will receive a complete auditing package including a WCAG 2.2 compliance report, raw audit sheets with recorded videos of user flows, and code-level remediation steps for your development team.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="p-4 bg-light rounded border border-light text-center">
+                            <h3 class="h3-title fs-4 mb-3">Need an Audit?</h3>
+                            <p class="body-text small text-muted mb-4">Request a consultation to define the scope of your platform and receive a custom audit estimate.</p>
+                            <a href="booking.html" class="btn-custom-primary w-100 mb-3">Schedule Strategy Call</a>
+                            <a href="pricing.html" class="btn-custom-secondary w-100">View Pricing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <svg width="180" height="50" viewBox="0 0 180 50" xmlns="http://www.w3.org/2000/svg" fill="none" class="text-primary mb-3">
+                        <circle cx="25" cy="25" r="20" stroke="currentColor" stroke-width="2.5" />
+                        <circle cx="25" cy="15" r="4.5" fill="currentColor" />
+                        <path d="M15 22h20M25 22v15M19 37l6-15 6 15" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <text x="55" y="32" font-family="'Outfit', sans-serif" font-size="20" font-weight="580" fill="currentColor">AccessAudit</text>
+                    </svg>
+                    <p class="body-text text-muted mb-4">I help companies audit, remediation-manage, and design web systems to follow WCAG 2.2 AA guidelines and ensure complete digital access.</p>
+                    <div class="d-flex gap-3 footer-social-icons"><a href="https://twitter.com" aria-label="Twitter profile" class="text-muted"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="https://linkedin.com" aria-label="LinkedIn profile" class="text-muted"><i class="bi bi-linkedin fs-5"></i></a>
+                        <a href="https://github.com" aria-label="GitHub profile" class="text-muted"><i class="bi bi-github fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled gap-2 d-flex flex-column">
+                        <li><a href="home-1.html" class="text-decoration-none text-muted">Home</a></li>
+                        <li><a href="about.html" class="text-decoration-none text-muted">About Me</a></li>
+                        <li><a href="services.html" class="text-decoration-none text-muted">Services</a></li>
+                        <li><a href="pricing.html" class="text-decoration-none text-muted">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-3">Resources</h5>
+                    <ul class="list-unstyled gap-2 d-flex flex-column">
+                        <li><a href="gallery.html" class="text-decoration-none text-muted">Project Gallery</a></li>
+                        <li><a href="booking.html" class="text-decoration-none text-muted">Book Call</a></li>
+                        <li><a href="blog.html" class="text-decoration-none text-muted">Insights Blog</a></li>
+                        <li><a href="contact.html" class="text-decoration-none text-muted">Contact Info</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-3">Newsletter</h5>
+                    <p class="body-text small text-muted">Stay up to date with the latest WCAG updates and accessibility standards.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email Address" required aria-label="Newsletter email input">
+                        <button type="submit" class="btn-custom-primary py-2 px-3"><i class="bi bi-send"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="row pt-4 border-top">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="caption-text mb-0">&copy; 2026 Alex Carter. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="404.html" class="text-decoration-none text-muted caption-text me-3">Privacy Policy</a>
+                    <a href="404.html" class="text-decoration-none text-muted caption-text">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

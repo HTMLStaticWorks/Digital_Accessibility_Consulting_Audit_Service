@@ -1,0 +1,101 @@
+/* Dark Mode Variables Override */
+.dark-theme {
+    --bg-color: #0f172a;
+    --text-color: #f8fafc;
+    --text-muted: #94a3b8;
+    --card-bg: #1e293b;
+    --border-color: #334155;
+}
+
+/* Specific elements for dark mode */
+.dark-theme .navbar {
+    background-color: rgba(15, 23, 42, 0.95);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dark-theme .offcanvas {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.dark-theme .offcanvas-header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dark-theme .form-control {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #f8fafc;
+}
+
+.dark-theme .form-control:focus {
+    background-color: #1e293b;
+    color: #f8fafc;
+}
+
+/* Bootstrap class overrides for dark mode */
+.dark-theme .bg-light {
+    background-color: var(--card-bg) !important;
+}
+
+.dark-theme .bg-white {
+    background-color: var(--bg-color) !important;
+}
+
+.dark-theme .text-muted {
+    color: var(--text-muted) !important;
+}
+
+.dark-theme .text-dark {
+    color: var(--text-color) !important;
+}
+
+/* Borders in dark mode */
+.dark-theme .border,
+.dark-theme .border-top,
+.dark-theme .border-bottom,
+.dark-theme .border-start,
+.dark-theme .border-end {
+    border-color: var(--border-color) !important;
+}
+
+/* Accordion components in dark mode */
+.dark-theme .accordion-item {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.dark-theme .accordion-button {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+.dark-theme .accordion-button:not(.collapsed) {
+    background-color: rgba(59, 60, 242, 0.15);
+    color: var(--text-color);
+}
+
+.dark-theme .accordion-button::after {
+    filter: invert(1);
+}
+
+/* Dropdown menus in dark mode */
+.dark-theme .dropdown-menu {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+.dark-theme .dropdown-item {
+    color: var(--text-color);
+}
+
+.dark-theme .dropdown-item:hover {
+    background-color: rgba(59, 60, 242, 0.15);
+    color: var(--text-color);
+}
+
+/* Back-to-top button icon */
+.dark-theme #back-to-top {
+    color: #0f172a;
+}

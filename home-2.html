@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Favicon -->
+    <link rel='icon' type='image/svg+xml' href='favicon.svg'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Carter | Expert WCAG & ADA Consulting</title>
+    <meta name="description" content="Affordable WCAG 2.2 audits and developer-focused remediation support. Avoid ADA lawsuits and welcome all users.">
+    <!-- Bootstrap CSS -->
+    <link id="bootstrap-style" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Custom Style sheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <nav class="navbar navbar-expand-xl fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="home-1.html" aria-label="AccessAudit Portfolio Home">
+                <svg width="180" height="50" viewBox="0 0 180 50" xmlns="http://www.w3.org/2000/svg" fill="none" class="navbar-logo-svg text-primary">
+                    <circle cx="25" cy="25" r="20" stroke="currentColor" stroke-width="2.5" />
+                    <circle cx="25" cy="15" r="4.5" fill="currentColor" />
+                    <path d="M15 22h20M25 22v15M19 37l6-15 6 15" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <text x="55" y="32" font-family="'Outfit', sans-serif" font-size="20" font-weight="580" fill="currentColor">AccessAudit</text>
+                </svg>
+            </a>
+
+            
+
+            <!-- Hamburger Button for Mobile -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="bi bi-list fs-1 text-primary"></span>
+            </button>
+
+            <!-- Desktop Nav Menu -->
+            <div class="collapse navbar-collapse d-none d-xl-flex justify-content-between">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item"><a class="nav-link" href="home-1.html">Home 1</a></li><li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="d-flex gap-2 align-items-center"><button class="toggle-btn theme-toggle-btn" aria-label="Toggle dark mode"></button><button class="toggle-btn rtl-toggle-btn" aria-label="Toggle direction"></button><a href="login.html" class="btn-custom-secondary btn-text py-2">Login</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Navigation (Mobile) -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <ul class="navbar-nav gap-3 text-center">
+                <li class="nav-item"><a class="nav-link" href="home-1.html">Home 1</a></li><li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="d-flex flex-column gap-2 mt-4 text-center">
+                <div class="d-flex justify-content-center gap-2 mb-3">
+                    <button class="toggle-btn theme-toggle-btn" aria-label="Toggle dark mode"></button><button class="toggle-btn rtl-toggle-btn" aria-label="Toggle direction"></button>
+                </div>
+                <a href="login.html" class="btn-custom-secondary btn-text w-100 py-2">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="hero-section text-center position-relative" style="background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center; padding: 10rem 0 8rem 0;">
+            <div class="hero-overlay"></div>
+            <div class="container hero-container position-relative z-2">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center text-white">
+                        <h1 class="h1-title mb-4 text-white">Complete WCAG 2.2 Compliance, Guaranteed.</h1>
+                        <p class="body-text fs-5 mb-5 text-white-50">Ensure your web apps are completely accessible to keyboard and screen reader users. I build direct paths to WCAG 2.2 and ADA alignment.</p>
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+                            <a href="contact.html" class="btn-custom-primary">Request a Scan</a>
+                            <a href="about.html" class="btn-custom-secondary text-white border-white">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. "Why Compliance Matters" Section -->
+        <section class="py-5">
+            <div class="container text-center">
+                <h2 class="h2-title mb-4">Protect Your Brand, Welcome Everyone</h2>
+                <div class="row g-4 mt-2">
+                    <div class="col-md-4">
+                        <div class="p-4 rounded bg-light border text-center">
+                            <svg class="img-fluid mb-3" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="70" height="70" rx="14" fill="rgba(59,60,242,0.1)"/>
+                                <path d="M20 35 C20 20, 50 20, 50 35 Z" stroke="#3b3cf2" stroke-width="2.5" fill="none"/>
+                                <circle cx="35" cy="22" r="6" fill="#3b3cf2"/>
+                                <circle cx="35" cy="48" r="8" fill="#0d9488"/>
+                            </svg>
+                            <h4>Brand Inclusivity</h4>
+                            <p class="body-text text-muted mb-0">Provide access to the 1 in 5 users with cognitive, motor, auditory, or visual differences.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 rounded bg-light border text-center">
+                            <svg class="img-fluid mb-3" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="70" height="70" rx="14" fill="rgba(13,148,136,0.1)"/>
+                                <path d="M20 22 L35 15 L50 22 V38 C50 48, 35 55, 35 55 C35 55, 20 48, 20 38 Z" fill="#0d9488" opacity="0.3" stroke="#0d9488" stroke-width="2.5"/>
+                                <path d="M30 35 L33 38 L40 31" stroke="#3b3cf2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <h4>Mitigate Legal Risk</h4>
+                            <p class="body-text text-muted mb-0">Prevent costly ADA demand letters and lawsuits by building a certified digital audit record.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 rounded bg-light border text-center">
+                            <svg class="img-fluid mb-3" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="70" height="70" rx="14" fill="rgba(59,60,242,0.1)"/>
+                                <path d="M18 45 L30 33 L38 41 L52 25" stroke="#3b3cf2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <polyline points="45,25 52,25 52,32" fill="none" stroke="#3b3cf2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <h4>Boost SEO & Conversion</h4>
+                            <p class="body-text text-muted mb-0">Google's search bots navigate pages exactly like keyboard screen readers. Accessible means SEO-friendly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Testimonial Quote Highlight -->
+        <section class="bg-light py-5">
+            <div class="container text-center">
+                <blockquote class="blockquote mb-0 max-width-800 mx-auto">
+                    <p class="fs-4 italic text-slate mb-4">"Alex brought deep expertise directly into our production sprints. Our software is now fully WCAG 2.2 compliant, opening sales cycles to government and university contracts."</p>
+                    <footer class="blockquote-footer mt-2">Devon Vance, <cite title="Source Title">CTO at ClassLearn</cite></footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- 4. Core Specialty Grid -->
+        <section class="py-5">
+            <div class="container text-center">
+                <h2 class="h2-title mb-3">Specialized Remediation Services</h2>
+                <p class="body-text mb-5 text-muted">Actionable assistance specifically tailored to your team's existing stack.</p>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="custom-card">
+                            <svg class="img-fluid mb-3" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="70" height="70" rx="14" fill="rgba(59,60,242,0.1)"/>
+                                <circle cx="35" cy="35" r="16" stroke="#3b3cf2" stroke-width="2.5"/>
+                                <line x1="46" y1="46" x2="56" y2="56" stroke="#3b3cf2" stroke-width="3.5" stroke-linecap="round"/>
+                            </svg>
+                            <h4>Web Auditing</h4>
+                            <p class="body-text small text-muted">Manual evaluation of your web pages using NVDA, JAWS, and VoiceOver screen readers.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="custom-card">
+                            <svg class="img-fluid mb-3" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="70" height="70" rx="14" fill="rgba(13,148,136,0.1)"/>
+                                <rect x="22" y="15" width="26" height="40" rx="4" stroke="#0d9488" stroke-width="2.5"/>
+                                <circle cx="35" cy="48" r="3" fill="#0d9488"/>
+                            </svg>
+                            <h4>Mobile Native Auditing</h4>
+                            <p class="body-text small text-muted">Audits for iOS VoiceOver and Android TalkBack on native react or native layouts.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="custom-card">
+                            <svg class="img-fluid mb-3" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="70" height="70" rx="14" fill="rgba(59,60,242,0.1)"/>
+                                <rect x="22" y="18" width="26" height="34" rx="3" stroke="#3b3cf2" stroke-width="2.5"/>
+                                <line x1="28" y1="28" x2="42" y2="28" stroke="#3b3cf2" stroke-width="2"/>
+                                <line x1="28" y1="36" x2="38" y2="36" stroke="#3b3cf2" stroke-width="2"/>
+                            </svg>
+                            <h4>VPAT Authoring</h4>
+                            <p class="body-text small text-muted">Creating Section 508 VPAT documentation to help you win government and enterprise contracts.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="custom-card">
+                            <svg class="img-fluid mb-3" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="70" height="70" rx="14" fill="rgba(13,148,136,0.1)"/>
+                                <path d="M22 22 H48 V38 H22 Z" fill="#0d9488" opacity="0.3" stroke="#0d9488" stroke-width="2"/>
+                                <circle cx="35" cy="48" r="6" fill="#3b3cf2"/>
+                            </svg>
+                            <h4>Interactive Workshops</h4>
+                            <p class="body-text small text-muted">Equipping your engineers with custom keyboard testing methods and clean ARIA structures.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Case Study Accordion -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <h2 class="h2-title text-center mb-5">Remediation Showcase</h2>
+                <div class="accordion max-width-800 mx-auto" id="caseStudies">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                1. Complex Webforms & Validation
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#caseStudies">
+                            <div class="accordion-body">
+                                <p class="body-text mb-0 text-muted">Improved custom dynamic multi-step forms by introducing real-time field error announcements using aria-live and visual focus shifting, reducing drop-off rate for screen reader users by 70%.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                2. Focus Management in Interactive Dashboards
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#caseStudies">
+                            <div class="accordion-body">
+                                <p class="body-text mb-0 text-muted">Remediated a complex interactive analytics portal by locking focus inside active modal dialogs, ensuring keyboard tab flow returned to the trigger element when closed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Direct CTA Section -->
+        <section class="py-5 text-center">
+            <div class="container">
+                <h2 class="h2-title mb-4">Start Your Accessibility Journey Today</h2>
+                <p class="body-text mb-4 text-muted">Receive a high-level summary of your domain's accessibility health.</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="booking.html" class="btn-custom-primary">Book Consultation</a>
+                    <a href="contact.html" class="btn-custom-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. VPAT Audits Section -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80" alt="VPAT compliance documents checklist on desk" class="img-fluid rounded shadow border border-light">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="h2-title mb-4">Voluntary Product Accessibility Templates</h2>
+                        <p class="body-text mb-4 text-muted">I draft comprehensive VPAT sheets and Section 508 accessibility statements so your digital software can pass enterprise and government legal reviews.</p>
+                        <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                            <li><i class="bi bi-file-earmark-text text-primary me-2"></i> Structured reports validating layout compatibility</li>
+                            <li><i class="bi bi-patch-check-fill text-primary me-2"></i> Comprehensive audit certificates for legal teams</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Legal Compliance Regulations Section -->
+        <section class="py-5">
+            <div class="container text-center">
+                <h2 class="h2-title mb-4">Navigating Accessibility Law</h2>
+                <p class="body-text mb-5 text-muted max-width-600 mx-auto">Protect your business from ADA Title III and European Accessibility Act (EAA) compliance lawsuits with direct auditor validation.</p>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="p-4 bg-light rounded border text-center hover-card-effect h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <svg class="img-fluid mb-3" width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="24" rx="5" fill="rgba(59,60,242,0.1)"/>
+                                    <path d="M12 6v12M8 10l4-2 4 2M6 14l3-1.5M18 14l-3-1.5" stroke="#3b3cf2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <h4>ADA Litigation Protection</h4>
+                            </div>
+                            <p class="body-text small text-muted mb-0">Build a legal defense file with certified manual audits showing compliance efforts.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="p-4 bg-light rounded border text-center hover-card-effect h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <svg class="img-fluid mb-3" width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="24" rx="5" fill="rgba(59,60,242,0.1)"/>
+                                    <circle cx="12" cy="12" r="7" stroke="#3b3cf2" stroke-width="1.8"/>
+                                    <path d="M12 5a3.5 3.5 0 0 0 0 14M5 12h14" stroke="#3b3cf2" stroke-width="1.8"/>
+                                </svg>
+                                <h4>EAA Global Standard</h4>
+                            </div>
+                            <p class="body-text small text-muted mb-0">Ensure layout formats conform to the mandatory June 2025 European guidelines.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Accessible Design Validation Section -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <h2 class="h2-title mb-4">Figma Design System Validation</h2>
+                        <p class="body-text mb-4 text-muted">Catch user flow and accessibility errors before they get coded, reviewing colors, interaction guides, and focus frameworks early.</p>
+                        <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                            <li><i class="bi bi-palette text-primary me-2"></i> Visual color contrast compliance palettes</li>
+                            <li><i class="bi bi-layers text-primary me-2"></i> Keyboard interaction guides and focus maps</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=600&q=80" alt="Designer choosing compliance color palettes" class="img-fluid rounded shadow border border-light">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <svg width="180" height="50" viewBox="0 0 180 50" xmlns="http://www.w3.org/2000/svg" fill="none" class="text-primary mb-3">
+                        <circle cx="25" cy="25" r="20" stroke="currentColor" stroke-width="2.5" />
+                        <circle cx="25" cy="15" r="4.5" fill="currentColor" />
+                        <path d="M15 22h20M25 22v15M19 37l6-15 6 15" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <text x="55" y="32" font-family="'Outfit', sans-serif" font-size="20" font-weight="580" fill="currentColor">AccessAudit</text>
+                    </svg>
+                    <p class="body-text text-muted mb-4">I help companies audit, remediation-manage, and design web systems to follow WCAG 2.2 AA guidelines and ensure complete digital access.</p>
+                    <div class="d-flex gap-3 footer-social-icons"><a href="https://twitter.com" aria-label="Twitter profile" class="text-muted"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="https://linkedin.com" aria-label="LinkedIn profile" class="text-muted"><i class="bi bi-linkedin fs-5"></i></a>
+                        <a href="https://github.com" aria-label="GitHub profile" class="text-muted"><i class="bi bi-github fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled gap-2 d-flex flex-column">
+                        <li><a href="home-1.html" class="text-decoration-none text-muted">Home</a></li>
+                        <li><a href="about.html" class="text-decoration-none text-muted">About Me</a></li>
+                        <li><a href="services.html" class="text-decoration-none text-muted">Services</a></li>
+                        <li><a href="pricing.html" class="text-decoration-none text-muted">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-3">Resources</h5>
+                    <ul class="list-unstyled gap-2 d-flex flex-column">
+                        <li><a href="gallery.html" class="text-decoration-none text-muted">Project Gallery</a></li>
+                        <li><a href="booking.html" class="text-decoration-none text-muted">Book Call</a></li>
+                        <li><a href="blog.html" class="text-decoration-none text-muted">Insights Blog</a></li>
+                        <li><a href="contact.html" class="text-decoration-none text-muted">Contact Info</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-3">Newsletter</h5>
+                    <p class="body-text small text-muted">Stay up to date with the latest WCAG updates and accessibility standards.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email Address" required aria-label="Newsletter email input">
+                        <button type="submit" class="btn-custom-primary py-2 px-3"><i class="bi bi-send"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="row pt-4 border-top">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="caption-text mb-0">&copy; 2026 Alex Carter. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="404.html" class="text-decoration-none text-muted caption-text me-3">Privacy Policy</a>
+                    <a href="404.html" class="text-decoration-none text-muted caption-text">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

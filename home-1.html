@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Favicon -->
+    <link rel='icon' type='image/svg+xml' href='favicon.svg'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Carter | Digital Accessibility Consulting & Audit Service</title>
+    <meta name="description" content="Certified accessibility specialist offering WCAG 2.2 auditing, ADA compliance remediation roadmaps, and tailored team training.">
+    <!-- Bootstrap CSS -->
+    <link id="bootstrap-style" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Custom Style sheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <nav class="navbar navbar-expand-xl fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="home-1.html" aria-label="AccessAudit Portfolio Home">
+                <svg width="180" height="50" viewBox="0 0 180 50" xmlns="http://www.w3.org/2000/svg" fill="none" class="navbar-logo-svg text-primary">
+                    <circle cx="25" cy="25" r="20" stroke="currentColor" stroke-width="2.5" />
+                    <circle cx="25" cy="15" r="4.5" fill="currentColor" />
+                    <path d="M15 22h20M25 22v15M19 37l6-15 6 15" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <text x="55" y="32" font-family="'Outfit', sans-serif" font-size="20" font-weight="580" fill="currentColor">AccessAudit</text>
+                </svg>
+            </a>
+
+            
+
+            <!-- Hamburger Button for Mobile -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="bi bi-list fs-1 text-primary"></span>
+            </button>
+
+            <!-- Desktop Nav Menu -->
+            <div class="collapse navbar-collapse d-none d-xl-flex justify-content-between">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item"><a class="nav-link" href="home-1.html">Home 1</a></li><li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="d-flex gap-2 align-items-center"><button class="toggle-btn theme-toggle-btn" aria-label="Toggle dark mode"></button><button class="toggle-btn rtl-toggle-btn" aria-label="Toggle direction"></button><a href="login.html" class="btn-custom-secondary btn-text py-2">Login</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Navigation (Mobile) -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <ul class="navbar-nav gap-3 text-center">
+                <li class="nav-item"><a class="nav-link" href="home-1.html">Home 1</a></li><li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="d-flex flex-column gap-2 mt-4 text-center">
+                <div class="d-flex justify-content-center gap-2 mb-3">
+                    <button class="toggle-btn theme-toggle-btn" aria-label="Toggle dark mode"></button><button class="toggle-btn rtl-toggle-btn" aria-label="Toggle direction"></button>
+                </div>
+                <a href="login.html" class="btn-custom-secondary btn-text w-100 py-2">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="hero-section text-center position-relative" style="background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center; padding: 10rem 0 8rem 0;">
+            <div class="hero-overlay"></div>
+            <div class="container hero-container position-relative z-2">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center text-white">
+                        <h1 class="h1-title mb-4 text-white">Making Digital Spaces Inclusive for Everyone.</h1>
+                        <p class="body-text fs-5 mb-5 text-white-50">I help businesses achieve WCAG 2.2 & ADA compliance, mitigate legal risks, and build accessible user experiences through audits and developer-friendly remediation.</p>
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+                            <a href="booking.html" class="btn-custom-primary">Book an Audit</a>
+                            <a href="services.html" class="btn-custom-secondary text-white border-white">My Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Statistics Section -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <div class="row text-center g-4">
+                    <div class="col-6 col-md-3">
+                        <h2 class="h2-title text-primary mb-1">120+</h2>
+                        <p class="caption-text text-uppercase tracking-wider">Audits Completed</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h2 class="h2-title text-primary mb-1">99%</h2>
+                        <p class="caption-text text-uppercase tracking-wider">Compliance Success</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h2 class="h2-title text-primary mb-1">15+</h2>
+                        <p class="caption-text text-uppercase tracking-wider">Years Experience</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h2 class="h2-title text-primary mb-1">4.9/5</h2>
+                        <p class="caption-text text-uppercase tracking-wider">Client Rating</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. About Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <h2 class="h2-title mb-4">Hi, I'm Alex Carter.</h2>
+                        <p class="body-text lead-text mb-4">I am a certified Web Accessibility consultant dedicated to removing digital barriers.</p>
+                        <p class="body-text mb-4 text-muted">With years of hands-on expertise in WCAG guidelines, screen readers, and code remediation, I partner directly with engineering and design groups to make websites, software, and applications compliant and fully usable for individuals with disabilities.</p>
+                        <a href="about.html" class="btn-custom-secondary">Read My Story</a>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <div class="mb-4">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&h=400&q=80" alt="Alex Carter, Accessibility Specialist" class="img-fluid rounded-circle shadow border border-light" style="width: 200px; height: 200px; object-fit: cover;">
+                        </div>
+                        <div class="bg-light p-5 rounded border border-light">
+                            <i class="bi bi-shield-check text-primary display-1 mb-4"></i>
+                            <h3 class="h3-title mb-3">Certified IAAP CPWA</h3>
+                            <p class="body-text text-muted">Internationally recognized credential in both accessibility core concepts and digital accessibility web auditing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Services Section -->
+        <section class="bg-light py-5">
+            <div class="container text-center">
+                <h2 class="h2-title mb-3">Practical Accessibility Services</h2>
+                <p class="body-text mb-5 max-width-600 mx-auto text-muted">Everything you need to secure compliance, prevent lawsuits, and build a welcoming platform for all users.</p>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="custom-card">
+                            <svg class="img-fluid mb-3" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="100" height="100" rx="16" fill="rgba(59,60,242,0.1)"/>
+                                <rect x="25" y="25" width="50" height="35" rx="3" stroke="#3b3cf2" stroke-width="2.5"/>
+                                <path d="M40 60 L35 70 H65 L60 60 Z" fill="#3b3cf2"/>
+                                <circle cx="65" cy="35" r="12" fill="#0d9488"/>
+                                <path d="M61 35 L64 38 L69 32" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <h3 class="h3-title fs-4 mb-3">Accessibility Audits</h3>
+                            <p class="body-text text-muted mb-4">Full manual and automated WCAG 2.2 testing with screen readers, keyboard-only evaluation, and a final compliance report.</p>
+                            <a href="service-details.html" class="btn-custom-secondary btn-sm mt-auto">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="custom-card">
+                            <svg class="img-fluid mb-3" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="100" height="100" rx="16" fill="rgba(13,148,136,0.1)"/>
+                                <path d="M25 40 L15 50 L25 60" stroke="#0d9488" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M75 40 L85 50 L75 60" stroke="#0d9488" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <line x1="32" y1="50" x2="68" y2="50" stroke="#3b3cf2" stroke-width="2" stroke-dasharray="4 4"/>
+                                <circle cx="35" cy="50" r="5" fill="#3b3cf2"/>
+                                <circle cx="50" cy="50" r="5" fill="#3b3cf2"/>
+                                <circle cx="65" cy="50" r="5" fill="#3b3cf2"/>
+                            </svg>
+                            <h3 class="h3-title fs-4 mb-3">Remediation Roadmap</h3>
+                            <p class="body-text text-muted mb-4">Detailed developer-focused instructions, code snippets, and direct guidance to patch contrast, ARIA, and focus order issues.</p>
+                            <a href="service-details.html" class="btn-custom-secondary btn-sm mt-auto">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="custom-card">
+                            <svg class="img-fluid mb-3" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="100" height="100" rx="16" fill="rgba(59,60,242,0.1)"/>
+                                <rect x="25" y="25" width="50" height="30" rx="2" fill="#3b3cf2"/>
+                                <path d="M35 55 L30 75 H70 L65 55 Z" fill="#0d9488"/>
+                                <circle cx="50" cy="40" r="6" fill="#ffffff"/>
+                                <path d="M40 50 C40 45, 60 45, 60 50 Z" fill="#ffffff"/>
+                            </svg>
+                            <h3 class="h3-title fs-4 mb-3">Employee Training</h3>
+                            <p class="body-text text-muted mb-4">Custom workshops and webinars for designers, engineers, and content writers to foster clean, accessible production standards.</p>
+                            <a href="service-details.html" class="btn-custom-secondary btn-sm mt-auto">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Workflow Section -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="h2-title text-center mb-5">How I Work</h2>
+                <div class="row g-4">
+                    <div class="col-md-3 text-center">
+                        <div class="p-4 bg-light rounded border">
+                            <div class="fs-1 fw-bold text-primary mb-3">01</div>
+                            <h4 class="mb-2">Discovery</h4>
+                            <p class="body-text small text-muted">Scoping your site, digital apps, or software to draft a custom compliance strategy.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="p-4 bg-light rounded border">
+                            <div class="fs-1 fw-bold text-primary mb-3">02</div>
+                            <h4 class="mb-2">Auditing</h4>
+                            <p class="body-text small text-muted">Running extensive screen reader, keyboard, contrast, and automated code audits.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="p-4 bg-light rounded border">
+                            <div class="fs-1 fw-bold text-primary mb-3">03</div>
+                            <h4 class="mb-2">Roadmapping</h4>
+                            <p class="body-text small text-muted">Delivering clear, prioritized, actionable repair briefs and guidance.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="p-4 bg-light rounded border">
+                            <div class="fs-1 fw-bold text-primary mb-3">04</div>
+                            <h4 class="mb-2">Validation</h4>
+                            <p class="body-text small text-muted">Retesting corrected interfaces to verify all issues are completely resolved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Testimonials Section -->
+        <section class="bg-light py-5">
+            <div class="container text-center">
+                <h2 class="h2-title mb-5">Trusted by Engineering Teams</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="bg-white p-4 rounded border text-center h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <p class="body-text text-muted mb-4">"Alex saved us from complex compliance litigation. The audit was detailed, and the code-level instructions helped our developers patch our core dashboard in less than two weeks."</p>
+                            </div>
+                            <div>
+                                <div class="mb-3">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=facearea&facepad=5&w=200&h=200&q=80" alt="Sarah Jenkins" class="rounded-circle border" style="width: 60px; height: 60px; object-fit: cover;">
+                                </div>
+                                <h5 class="mb-0">Sarah Jenkins</h5>
+                                <span class="caption-text">VP of Engineering, EduTech Inc.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bg-white p-4 rounded border text-center h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <p class="body-text text-muted mb-4">"The training package Alex conducted was eye-opening. Our design team now designs with contrast and keyboard focus in mind, saving us tons of rework downstream."</p>
+                            </div>
+                            <div>
+                                <div class="mb-3">
+                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=facearea&facepad=3&w=200&h=200&q=80" alt="Marcus Thorne" class="rounded-circle border" style="width: 60px; height: 60px; object-fit: cover;">
+                                </div>
+                                <h5 class="mb-0">Marcus Thorne</h5>
+                                <span class="caption-text">Product Director, RetailFlow</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. CTA Section -->
+        <section class="py-5 text-center">
+            <div class="container">
+                <h2 class="h2-title mb-4">Ready to Secure Compliance?</h2>
+                <p class="body-text mb-4 text-muted">Schedule a free 15-minute introductory call to outline your accessibility targets and timelines.</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="booking.html" class="btn-custom-primary">Book Consultation</a>
+                    <a href="contact.html" class="btn-custom-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Auditing Tools Section -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=600&q=80" alt="Specialist checking web elements using auditing tools" class="img-fluid rounded shadow border border-light">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="h2-title mb-4">My Auditing Toolstack</h2>
+                        <p class="body-text mb-4 text-muted">I leverage professional assistive technology products to evaluate actual screen reader navigation behavior and identify accessibility blockers.</p>
+                        <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                            <li><i class="bi bi-cpu-fill text-primary me-2"></i> NVDA & JAWS (Windows desktop screen reader simulation)</li>
+                            <li><i class="bi bi-phone-fill text-primary me-2"></i> iOS VoiceOver & Android TalkBack native gestures</li>
+                            <li><i class="bi bi-braces-asterisk text-primary me-2"></i> Axe-core CLI & WAVE automation scripts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. CI/CD Integration Section -->
+        <section class="py-5">
+            <div class="container text-center">
+                <h2 class="h2-title mb-4">Automated CI/CD Accessibility Checks</h2>
+                <p class="body-text mb-5 text-muted max-width-600 mx-auto">Inject accessibility audits directly into your dev workflows, catching contrast errors and layout bugs before code hits staging.</p>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 opacity-hover col-lg-4">
+                        <div class="p-4 bg-light rounded border text-center hover-card-effect">
+                            <svg class="img-fluid mb-3" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="60" height="60" rx="12" fill="rgba(59,60,242,0.1)"/>
+                                <circle cx="30" cy="20" r="6" fill="#3b3cf2"/>
+                                <circle cx="20" cy="40" r="6" fill="#3b3cf2"/>
+                                <circle cx="40" cy="40" r="6" fill="#3b3cf2"/>
+                                <line x1="30" y1="26" x2="20" y2="34" stroke="#3b3cf2" stroke-width="2.5"/>
+                                <line x1="30" y1="26" x2="40" y2="34" stroke="#3b3cf2" stroke-width="2.5"/>
+                            </svg>
+                            <h4>Git Hook Scans</h4>
+                            <p class="body-text small text-muted">Scan committed files automatically, blocking updates that introduce invalid markup or missing labels.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="p-4 bg-light rounded border text-center hover-card-effect">
+                            <svg class="img-fluid mb-3" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="60" height="60" rx="12" fill="rgba(13,148,136,0.1)"/>
+                                <rect x="15" y="15" width="30" height="22" rx="2" fill="#0d9488"/>
+                                <rect x="22" y="37" width="16" height="8" fill="#0d9488" opacity="0.5"/>
+                                <line x1="12" y1="45" x2="48" y2="45" stroke="#0d9488" stroke-width="2.5"/>
+                            </svg>
+                            <h4>Staging Audits</h4>
+                            <p class="body-text small text-muted">Execute complete crawler scripts against your staging domain to output automated dashboard reviews.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. WCAG Checklist Highlights Section -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <h2 class="h2-title mb-4">WCAG Checklist Highlights</h2>
+                        <p class="body-text mb-4 text-muted">My remediation roadmaps cover the core compliance areas essential to protect your organization and secure digital accessibility.</p>
+                        <div class="accordion" id="checklistAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="checkHeadingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#checkCollapseOne" aria-expanded="false" aria-controls="checkCollapseOne">
+                                        Perceivable (Contrast & Text Alterations)
+                                    </button>
+                                </h2>
+                                <div id="checkCollapseOne" class="accordion-collapse collapse" aria-labelledby="checkHeadingOne" data-bs-parent="#checklistAccordion">
+                                    <div class="accordion-body">
+                                        <p class="body-text small text-muted mb-0">Providing text alternatives, captioning multimedia, and configuring layouts to support up to 400% text magnification changes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="checkHeadingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#checkCollapseTwo" aria-expanded="false" aria-controls="checkCollapseTwo">
+                                        Operable (Keyboard & Flow Control)
+                                    </button>
+                                </h2>
+                                <div id="checkCollapseTwo" class="accordion-collapse collapse" aria-labelledby="checkHeadingTwo" data-bs-parent="#checklistAccordion">
+                                    <div class="accordion-body">
+                                        <p class="body-text small text-muted mb-0">Ensuring all links are focusable without keyboard traps and that navigation order matches visual design structures.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" alt="Consultant reviewing compliance checklist files" class="img-fluid rounded shadow border border-light">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <svg width="180" height="50" viewBox="0 0 180 50" xmlns="http://www.w3.org/2000/svg" fill="none" class="text-primary mb-3">
+                        <circle cx="25" cy="25" r="20" stroke="currentColor" stroke-width="2.5" />
+                        <circle cx="25" cy="15" r="4.5" fill="currentColor" />
+                        <path d="M15 22h20M25 22v15M19 37l6-15 6 15" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <text x="55" y="32" font-family="'Outfit', sans-serif" font-size="20" font-weight="580" fill="currentColor">AccessAudit</text>
+                    </svg>
+                    <p class="body-text text-muted mb-4">I help companies audit, remediation-manage, and design web systems to follow WCAG 2.2 AA guidelines and ensure complete digital access.</p>
+                    <div class="d-flex gap-3 footer-social-icons"><a href="https://twitter.com" aria-label="Twitter profile" class="text-muted"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="https://linkedin.com" aria-label="LinkedIn profile" class="text-muted"><i class="bi bi-linkedin fs-5"></i></a>
+                        <a href="https://github.com" aria-label="GitHub profile" class="text-muted"><i class="bi bi-github fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled gap-2 d-flex flex-column">
+                        <li><a href="home-1.html" class="text-decoration-none text-muted">Home</a></li>
+                        <li><a href="about.html" class="text-decoration-none text-muted">About Me</a></li>
+                        <li><a href="services.html" class="text-decoration-none text-muted">Services</a></li>
+                        <li><a href="pricing.html" class="text-decoration-none text-muted">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-3">Resources</h5>
+                    <ul class="list-unstyled gap-2 d-flex flex-column">
+                        <li><a href="gallery.html" class="text-decoration-none text-muted">Project Gallery</a></li>
+                        <li><a href="booking.html" class="text-decoration-none text-muted">Book Call</a></li>
+                        <li><a href="blog.html" class="text-decoration-none text-muted">Insights Blog</a></li>
+                        <li><a href="contact.html" class="text-decoration-none text-muted">Contact Info</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-3">Newsletter</h5>
+                    <p class="body-text small text-muted">Stay up to date with the latest WCAG updates and accessibility standards.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email Address" required aria-label="Newsletter email input">
+                        <button type="submit" class="btn-custom-primary py-2 px-3"><i class="bi bi-send"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="row pt-4 border-top">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="caption-text mb-0">&copy; 2026 Alex Carter. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="404.html" class="text-decoration-none text-muted caption-text me-3">Privacy Policy</a>
+                    <a href="404.html" class="text-decoration-none text-muted caption-text">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
