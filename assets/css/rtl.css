@@ -26,3 +26,26 @@ body[dir="rtl"] .text-start {
 body[dir="rtl"] .text-end {
     text-align: left !important;
 }
+
+body[dir="rtl"] svg text {
+    direction: ltr !important;
+    unicode-bidi: bidi-override !important;
+    text-anchor: start !important;
+}
+
+/* RTL date input calendar icon position override */
+body[dir="rtl"] input[type="date"] {
+    direction: rtl !important;
+}
+
+/* Adjust hamburger menu button spacing on RTL mobile/tablet screens */
+body[dir="rtl"] .navbar-toggler {
+    padding-left: 0 !important;
+    padding-right: 0.5rem !important;
+}
+
+/* Adjust auth toggles alignment in RTL mode */
+body[dir="rtl"] .viewport-fixed-toggles {
+    right: auto !important;
+    left: 1rem !important;
+}

@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link id="bootstrap-style" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <!-- Custom Style sheets -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/dark-mode.css">
@@ -50,7 +50,7 @@
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
 
-                <div class="d-flex gap-2 align-items-center"><button class="toggle-btn theme-toggle-btn" aria-label="Toggle dark mode"></button><button class="toggle-btn rtl-toggle-btn" aria-label="Toggle direction"></button><a href="login.html" class="btn-custom-secondary btn-text py-2">Login</a></div>
+                <div class="d-flex gap-2 align-items-center"><button class="toggle-btn theme-toggle-btn" aria-label="Toggle dark mode"></button><button class="toggle-btn rtl-toggle-btn" aria-label="Toggle direction">RTL</button><a href="login.html" class="btn-custom-secondary btn-text py-2">Login</a></div>
             </div>
         </div>
     </nav>
@@ -75,7 +75,7 @@
 
             <div class="d-flex flex-column gap-2 mt-4 text-center">
                 <div class="d-flex justify-content-center gap-2 mb-3">
-                    <button class="toggle-btn theme-toggle-btn" aria-label="Toggle dark mode"></button><button class="toggle-btn rtl-toggle-btn" aria-label="Toggle direction"></button>
+                    <button class="toggle-btn theme-toggle-btn" aria-label="Toggle dark mode"></button><button class="toggle-btn rtl-toggle-btn" aria-label="Toggle direction">RTL</button>
                 </div>
                 <a href="login.html" class="btn-custom-secondary btn-text w-100 py-2">Login</a>
             </div>
@@ -96,11 +96,11 @@
         <!-- 2. Blog Grid Section -->
         <section class="py-5">
             <div class="container">
-                <div class="row g-4">
+                <div class="row g-4 justify-content-center">
                     <!-- Article 1 -->
                     <div class="col-md-6 col-lg-4">
                         <div class="custom-card">
-                            <img src="https://images.unsplash.com/photo-1541462608141-2ff580de097a?auto=format&fit=crop&w=600&q=80" alt="Designer reviewing contrast palettes" class="img-fluid rounded mb-3" style="height: 180px; object-fit: cover;">
+                            <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=600&q=80" alt="Designer reviewing contrast palettes" class="img-fluid rounded mb-3" style="height: 180px; object-fit: cover;">
                             <h3 class="h3-title fs-5 mb-3">Understanding WCAG 2.2 Color Contrast Rules</h3>
                             <p class="body-text small text-muted mb-4">A practical look at how contrast formulas work under APCA and visual compliance standards.</p>
                             <a href="blog-details.html" class="btn-custom-secondary btn-sm mt-auto">Read Article</a>
@@ -128,12 +128,62 @@
             </div>
         </section>
 
+        <!-- Trending Topics Section -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="h2-title text-center mb-3">Trending Topics</h2>
+                <p class="body-text text-center mb-5 text-muted max-width-600 mx-auto">Explore tutorials and developer guides grouped by core compliance and coding areas.</p>
+                <div class="row g-4">
+                    <!-- Category 1 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="p-4 bg-white rounded border hover-card-effect h-100 text-center">
+                            <span class="d-inline-flex align-items-center justify-content-center text-primary rounded-circle mb-3" style="width: 50px; height: 50px; background-color: rgba(59, 60, 242, 0.1);">
+                                <i class="bi bi-palette fs-4"></i>
+                            </span>
+                            <h3 class="h3-title fs-5 mb-2">Contrast & UI</h3>
+                            <p class="body-text small text-muted mb-0">Color theory, APCA algorithms, dark mode contrasts, and WCAG AA visual compliance tips.</p>
+                        </div>
+                    </div>
+                    <!-- Category 2 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="p-4 bg-white rounded border hover-card-effect h-100 text-center">
+                            <span class="d-inline-flex align-items-center justify-content-center text-secondary rounded-circle mb-3" style="width: 50px; height: 50px; background-color: rgba(13, 148, 136, 0.1);">
+                                <i class="bi bi-code-slash fs-4"></i>
+                            </span>
+                            <h3 class="h3-title fs-5 mb-2">ARIA & Coding</h3>
+                            <p class="body-text small text-muted mb-0">Keyboard focus management, aria-live announcements, semantic tag replacements, and modal dialog trap scripts.</p>
+                        </div>
+                    </div>
+                    <!-- Category 3 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="p-4 bg-white rounded border hover-card-effect h-100 text-center">
+                            <span class="d-inline-flex align-items-center justify-content-center text-primary rounded-circle mb-3" style="width: 50px; height: 50px; background-color: rgba(59, 60, 242, 0.1);">
+                                <i class="bi bi-layers fs-4"></i>
+                            </span>
+                            <h3 class="h3-title fs-5 mb-2">Design Tokens</h3>
+                            <p class="body-text small text-muted mb-0">Reviewing Figma libraries, spacing hierarchies, typographic accessibility scales, and design systems audit keys.</p>
+                        </div>
+                    </div>
+                    <!-- Category 4 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="p-4 bg-white rounded border hover-card-effect h-100 text-center">
+                            <span class="d-inline-flex align-items-center justify-content-center text-secondary rounded-circle mb-3" style="width: 50px; height: 50px; background-color: rgba(13, 148, 136, 0.1);">
+                                <i class="bi bi-shield-lock fs-4"></i>
+                            </span>
+                            <h3 class="h3-title fs-5 mb-2">ADA Title III Law</h3>
+                            <p class="body-text small text-muted mb-0">Legal updates on accessibility legislation, VPAT authoring, Section 508 templates, and litigation mitigation keys.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- 3. Newsletter / Action Section -->
         <section class="bg-light py-5 text-center">
             <div class="container">
                 <h2 class="h2-title mb-4">Get Monthly Code Tutorials</h2>
                 <p class="body-text mb-4 text-muted">Join other developers receiving real accessibility remediation code examples.</p>
-                <div class="max-width-600 mx-auto">
+                <div class="max-width-450 mx-auto">
                     <form class="d-flex gap-2">
                         <input type="email" class="form-control" placeholder="Your Email Address" required aria-label="Blog newsletter input">
                         <button type="submit" class="btn-custom-primary">Subscribe</button>
@@ -155,7 +205,7 @@
                         <text x="55" y="32" font-family="'Outfit', sans-serif" font-size="20" font-weight="580" fill="currentColor">AccessAudit</text>
                     </svg>
                     <p class="body-text text-muted mb-4">I help companies audit, remediation-manage, and design web systems to follow WCAG 2.2 AA guidelines and ensure complete digital access.</p>
-                    <div class="d-flex gap-3 footer-social-icons"><a href="https://twitter.com" aria-label="Twitter profile" class="text-muted"><i class="bi bi-twitter fs-5"></i></a>
+                    <div class="d-flex gap-3 footer-social-icons"><a href="https://twitter.com" aria-label="Twitter profile" class="text-muted"><i class="bi bi-twitter-x fs-5"></i></a>
                         <a href="https://linkedin.com" aria-label="LinkedIn profile" class="text-muted"><i class="bi bi-linkedin fs-5"></i></a>
                         <a href="https://github.com" aria-label="GitHub profile" class="text-muted"><i class="bi bi-github fs-5"></i></a>
                     </div>
@@ -208,3 +258,4 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+

@@ -5,6 +5,7 @@
     --text-muted: #94a3b8;
     --card-bg: #1e293b;
     --border-color: #334155;
+    color-scheme: dark;
 }
 
 /* Specific elements for dark mode */
@@ -22,15 +23,50 @@
     border-bottom: 1px solid var(--border-color);
 }
 
-.dark-theme .form-control {
-    background-color: #1e293b;
-    border-color: #334155;
-    color: #f8fafc;
+.dark-theme .form-control,
+.dark-theme .form-select {
+    background-color: #1e293b !important;
+    border-color: #334155 !important;
+    color: #f8fafc !important;
 }
 
-.dark-theme .form-control:focus {
-    background-color: #1e293b;
-    color: #f8fafc;
+.dark-theme .form-control::-webkit-input-placeholder {
+    color: #cbd5e1 !important;
+    opacity: 1 !important;
+}
+.dark-theme .form-control::-moz-placeholder {
+    color: #cbd5e1 !important;
+    opacity: 1 !important;
+}
+.dark-theme .form-control:-ms-input-placeholder {
+    color: #cbd5e1 !important;
+    opacity: 1 !important;
+}
+.dark-theme .form-control::placeholder {
+    color: #cbd5e1 !important;
+    opacity: 1 !important;
+}
+
+.dark-theme .form-control:focus,
+.dark-theme .form-select:focus {
+    background-color: #1e293b !important;
+    color: #f8fafc !important;
+    border-color: var(--primary-color) !important;
+}
+
+.dark-theme option {
+    background-color: #1e293b !important;
+    color: #f8fafc !important;
+}
+
+/* Chrome/Safari date input calendar icon */
+.dark-theme input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23f8fafc" class="bi bi-calendar" viewBox="0 0 16 16"><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/></svg>') no-repeat center !important;
+}
+
+/* Bootstrap form-select caret color in dark mode */
+.dark-theme .form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23f8fafc' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
 }
 
 /* Bootstrap class overrides for dark mode */
@@ -98,4 +134,16 @@
 /* Back-to-top button icon */
 .dark-theme #back-to-top {
     color: #0f172a;
+}
+
+/* Custom btn-social hover style override for dark mode to ensure visibility */
+.dark-theme .btn-social:hover {
+    background-color: rgba(13, 148, 136, 0.15) !important;
+    border-color: var(--secondary-color) !important;
+    color: #f8fafc !important;
+}
+
+/* Invert mobile offcanvas menu close button in dark mode */
+.dark-theme .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%) !important;
 }

@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 bootstrapStyle.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css';
             }
             rtlBtns.forEach(btn => {
-                btn.innerHTML = '<i class="bi bi-globe" aria-hidden="true"></i>';
+                btn.textContent = 'LTR';
             });
             localStorage.setItem('dir', 'rtl');
         } else {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 bootstrapStyle.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css';
             }
             rtlBtns.forEach(btn => {
-                btn.innerHTML = '<i class="bi bi-translate" aria-hidden="true"></i>';
+                btn.textContent = 'RTL';
             });
             localStorage.setItem('dir', 'ltr');
         }

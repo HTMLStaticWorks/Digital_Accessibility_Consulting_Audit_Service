@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link id="bootstrap-style" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <!-- Custom Style sheets -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/dark-mode.css">
@@ -50,7 +50,7 @@
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
 
-                <div class="d-flex gap-2 align-items-center"><button class="toggle-btn theme-toggle-btn" aria-label="Toggle dark mode"></button><button class="toggle-btn rtl-toggle-btn" aria-label="Toggle direction"></button><a href="login.html" class="btn-custom-secondary btn-text py-2">Login</a></div>
+                <div class="d-flex gap-2 align-items-center"><button class="toggle-btn theme-toggle-btn" aria-label="Toggle dark mode"></button><button class="toggle-btn rtl-toggle-btn" aria-label="Toggle direction">RTL</button><a href="login.html" class="btn-custom-secondary btn-text py-2">Login</a></div>
             </div>
         </div>
     </nav>
@@ -75,7 +75,7 @@
 
             <div class="d-flex flex-column gap-2 mt-4 text-center">
                 <div class="d-flex justify-content-center gap-2 mb-3">
-                    <button class="toggle-btn theme-toggle-btn" aria-label="Toggle dark mode"></button><button class="toggle-btn rtl-toggle-btn" aria-label="Toggle direction"></button>
+                    <button class="toggle-btn theme-toggle-btn" aria-label="Toggle dark mode"></button><button class="toggle-btn rtl-toggle-btn" aria-label="Toggle direction">RTL</button>
                 </div>
                 <a href="login.html" class="btn-custom-secondary btn-text w-100 py-2">Login</a>
             </div>
@@ -98,7 +98,7 @@
             <div class="container">
                 <div class="row g-4 justify-content-center align-items-stretch">
                     <!-- Starter Plan -->
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="custom-card border border-light h-100 d-flex flex-column justify-content-between">
                             <div>
                                 <h3 class="h3-title fs-4 mb-2">Starter Audit</h3>
@@ -107,17 +107,26 @@
                                 <div class="my-4">
                                     <span class="fs-1 fw-bold">$800</span>
                                 </div>
-                                <ul class="list-unstyled d-flex flex-column gap-3 mb-5 text-start">
-                                    <li><i class="bi bi-check text-primary me-2"></i> Up to 5 core page templates</li>
-                                    <li><i class="bi bi-check text-primary me-2"></i> Manual Screen Reader scan</li>
-                                    <li><i class="bi bi-check text-primary me-2"></i> Detailed PDF Compliance report</li>
+                                <ul class="list-unstyled d-flex flex-column gap-3 mb-5 text-start mx-auto" style="max-width: fit-content;">
+                                    <li class="d-flex align-items-start gap-2">
+                                        <i class="bi bi-check text-primary fs-5 lh-1"></i>
+                                        <span>Up to 5 core page templates</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2">
+                                        <i class="bi bi-check text-primary fs-5 lh-1"></i>
+                                        <span>Manual Screen Reader scan</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2">
+                                        <i class="bi bi-check text-primary fs-5 lh-1"></i>
+                                        <span>Detailed PDF Compliance report</span>
+                                    </li>
                                 </ul>
                             </div>
                             <a href="booking.html" class="btn-custom-secondary w-100">Get Started</a>
                         </div>
                     </div>
                     <!-- Popular Plan (Middle) -->
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="custom-card border-2 border-primary h-100 d-flex flex-column justify-content-between position-relative">
                             <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-primary px-3 py-2">Popular Plan</span>
                             <div>
@@ -127,17 +136,26 @@
                                 <div class="my-4">
                                     <span class="fs-1 fw-bold">$2,400</span>
                                 </div>
-                                <ul class="list-unstyled d-flex flex-column gap-3 mb-5 text-start">
-                                    <li><i class="bi bi-check text-primary me-2"></i> Complete auditing up to 15 templates</li>
-                                    <li><i class="bi bi-check text-primary me-2"></i> Custom HTML/CSS code updates</li>
-                                    <li><i class="bi bi-check text-primary me-2"></i> 2 rounds of verification tests</li>
+                                <ul class="list-unstyled d-flex flex-column gap-3 mb-5 text-start mx-auto" style="max-width: fit-content;">
+                                    <li class="d-flex align-items-start gap-2">
+                                        <i class="bi bi-check text-primary fs-5 lh-1"></i>
+                                        <span>Complete auditing up to 15 templates</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2">
+                                        <i class="bi bi-check text-primary fs-5 lh-1"></i>
+                                        <span>Custom HTML/CSS code updates</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2">
+                                        <i class="bi bi-check text-primary fs-5 lh-1"></i>
+                                        <span>2 rounds of verification tests</span>
+                                    </li>
                                 </ul>
                             </div>
                             <a href="booking.html" class="btn-custom-primary w-100">Get Started</a>
                         </div>
                     </div>
                     <!-- Enterprise Plan -->
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="custom-card border border-light h-100 d-flex flex-column justify-content-between">
                             <div>
                                 <h3 class="h3-title fs-4 mb-2">Full Compliance Package</h3>
@@ -146,10 +164,19 @@
                                 <div class="my-4">
                                     <span class="fs-1 fw-bold">$4,800</span>
                                 </div>
-                                <ul class="list-unstyled d-flex flex-column gap-3 mb-5 text-start">
-                                    <li><i class="bi bi-check text-primary me-2"></i> Unlimited page audits & updates</li>
-                                    <li><i class="bi bi-check text-primary me-2"></i> Section 508 VPAT documentation</li>
-                                    <li><i class="bi bi-check text-primary me-2"></i> 2 dynamic workshops for developers</li>
+                                <ul class="list-unstyled d-flex flex-column gap-3 mb-5 text-start mx-auto" style="max-width: fit-content;">
+                                    <li class="d-flex align-items-start gap-2">
+                                        <i class="bi bi-check text-primary fs-5 lh-1"></i>
+                                        <span>Unlimited page audits & updates</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2">
+                                        <i class="bi bi-check text-primary fs-5 lh-1"></i>
+                                        <span>Section 508 VPAT documentation</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2">
+                                        <i class="bi bi-check text-primary fs-5 lh-1"></i>
+                                        <span>2 dynamic workshops for developers</span>
+                                    </li>
                                 </ul>
                             </div>
                             <a href="booking.html" class="btn-custom-secondary w-100">Get Started</a>
@@ -181,7 +208,7 @@
                         <text x="55" y="32" font-family="'Outfit', sans-serif" font-size="20" font-weight="580" fill="currentColor">AccessAudit</text>
                     </svg>
                     <p class="body-text text-muted mb-4">I help companies audit, remediation-manage, and design web systems to follow WCAG 2.2 AA guidelines and ensure complete digital access.</p>
-                    <div class="d-flex gap-3 footer-social-icons"><a href="https://twitter.com" aria-label="Twitter profile" class="text-muted"><i class="bi bi-twitter fs-5"></i></a>
+                    <div class="d-flex gap-3 footer-social-icons"><a href="https://twitter.com" aria-label="Twitter profile" class="text-muted"><i class="bi bi-twitter-x fs-5"></i></a>
                         <a href="https://linkedin.com" aria-label="LinkedIn profile" class="text-muted"><i class="bi bi-linkedin fs-5"></i></a>
                         <a href="https://github.com" aria-label="GitHub profile" class="text-muted"><i class="bi bi-github fs-5"></i></a>
                     </div>
@@ -234,3 +261,4 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+

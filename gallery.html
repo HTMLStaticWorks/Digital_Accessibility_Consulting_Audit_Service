@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link id="bootstrap-style" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <!-- Custom Style sheets -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/dark-mode.css">
@@ -50,7 +50,7 @@
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
 
-                <div class="d-flex gap-2 align-items-center"><button class="toggle-btn theme-toggle-btn" aria-label="Toggle dark mode"></button><button class="toggle-btn rtl-toggle-btn" aria-label="Toggle direction"></button><a href="login.html" class="btn-custom-secondary btn-text py-2">Login</a></div>
+                <div class="d-flex gap-2 align-items-center"><button class="toggle-btn theme-toggle-btn" aria-label="Toggle dark mode"></button><button class="toggle-btn rtl-toggle-btn" aria-label="Toggle direction">RTL</button><a href="login.html" class="btn-custom-secondary btn-text py-2">Login</a></div>
             </div>
         </div>
     </nav>
@@ -75,7 +75,7 @@
 
             <div class="d-flex flex-column gap-2 mt-4 text-center">
                 <div class="d-flex justify-content-center gap-2 mb-3">
-                    <button class="toggle-btn theme-toggle-btn" aria-label="Toggle dark mode"></button><button class="toggle-btn rtl-toggle-btn" aria-label="Toggle direction"></button>
+                    <button class="toggle-btn theme-toggle-btn" aria-label="Toggle dark mode"></button><button class="toggle-btn rtl-toggle-btn" aria-label="Toggle direction">RTL</button>
                 </div>
                 <a href="login.html" class="btn-custom-secondary btn-text w-100 py-2">Login</a>
             </div>
@@ -96,7 +96,7 @@
         <!-- 2. Project Showcase Grid -->
         <section class="py-5">
             <div class="container">
-                <div class="row g-4">
+                <div class="row g-4 justify-content-center">
                     <!-- Project 1 -->
                     <div class="col-md-6 col-lg-4">
                         <div class="custom-card">
@@ -120,11 +120,51 @@
                     <!-- Project 3 -->
                     <div class="col-md-6 col-lg-4">
                         <div class="custom-card">
-                            <img src="https://images.unsplash.com/photo-1542744094-3a31f103e35f?auto=format&fit=crop&w=600&q=80" alt="Corporate HR web dashboard interface" class="img-fluid rounded mb-3" style="height: 180px; object-fit: cover;">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Corporate HR web dashboard interface" class="img-fluid rounded mb-3" style="height: 180px; object-fit: cover;">
                             <h3 class="h3-title fs-5 mb-2">SaaS HR Portal</h3>
                             <p class="caption-text text-uppercase tracking-wider text-muted mb-3">VPAT & Section 508</p>
                             <p class="body-text small text-muted mb-4">Generated a Voluntary Product Accessibility Template to support local government and enterprise sales.</p>
                             <a href="booking.html" class="btn-custom-secondary btn-sm mt-auto">Inquire Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Metrics Section -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <h2 class="h2-title text-center mb-3">Impact & Results</h2>
+                <p class="body-text text-center mb-5 text-muted max-width-600 mx-auto">Helping businesses deliver inclusive experiences while completely mitigating legal exposure.</p>
+                <div class="row g-4 text-center">
+                    <div class="col-md-4 d-flex">
+                        <div class="p-4 bg-white rounded border h-100 w-100 hover-card-effect">
+                            <span class="d-inline-flex align-items-center justify-content-center text-primary rounded-circle mb-3" style="width: 60px; height: 60px; background-color: rgba(59, 60, 242, 0.1);">
+                                <i class="bi bi-graph-up-arrow fs-3"></i>
+                            </span>
+                            <div class="display-5 fw-bold text-dark mb-2">99.9%</div>
+                            <h4 class="fs-5 mb-2">WCAG Compliance</h4>
+                            <p class="body-text small text-muted mb-0">Average Level AA accessibility conformance achieved by our clients post-remediation.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex">
+                        <div class="p-4 bg-white rounded border h-100 w-100 hover-card-effect">
+                            <span class="d-inline-flex align-items-center justify-content-center text-secondary rounded-circle mb-3" style="width: 60px; height: 60px; background-color: rgba(13, 148, 136, 0.1);">
+                                <i class="bi bi-shield-check fs-3"></i>
+                            </span>
+                            <div class="display-5 fw-bold text-dark mb-2">Zero</div>
+                            <h4 class="fs-5 mb-2">Active ADA Claims</h4>
+                            <p class="body-text small text-muted mb-0">None of our audited and certified clients have faced active litigation or demand letters.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex">
+                        <div class="p-4 bg-white rounded border h-100 w-100 hover-card-effect">
+                            <span class="d-inline-flex align-items-center justify-content-center text-primary rounded-circle mb-3" style="width: 60px; height: 60px; background-color: rgba(59, 60, 242, 0.1);">
+                                <i class="bi bi-award fs-3"></i>
+                            </span>
+                            <div class="display-5 fw-bold text-dark mb-2">50+</div>
+                            <h4 class="fs-5 mb-2">Platforms Certified</h4>
+                            <p class="body-text small text-muted mb-0">Successfully audited and remediated digital products across SaaS, EdTech, and E-Commerce.</p>
                         </div>
                     </div>
                 </div>
@@ -153,7 +193,7 @@
                         <text x="55" y="32" font-family="'Outfit', sans-serif" font-size="20" font-weight="580" fill="currentColor">AccessAudit</text>
                     </svg>
                     <p class="body-text text-muted mb-4">I help companies audit, remediation-manage, and design web systems to follow WCAG 2.2 AA guidelines and ensure complete digital access.</p>
-                    <div class="d-flex gap-3 footer-social-icons"><a href="https://twitter.com" aria-label="Twitter profile" class="text-muted"><i class="bi bi-twitter fs-5"></i></a>
+                    <div class="d-flex gap-3 footer-social-icons"><a href="https://twitter.com" aria-label="Twitter profile" class="text-muted"><i class="bi bi-twitter-x fs-5"></i></a>
                         <a href="https://linkedin.com" aria-label="LinkedIn profile" class="text-muted"><i class="bi bi-linkedin fs-5"></i></a>
                         <a href="https://github.com" aria-label="GitHub profile" class="text-muted"><i class="bi bi-github fs-5"></i></a>
                     </div>
@@ -206,3 +246,4 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+

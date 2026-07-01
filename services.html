@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link id="bootstrap-style" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <!-- Custom Style sheets -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/dark-mode.css">
@@ -50,7 +50,7 @@
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
 
-                <div class="d-flex gap-2 align-items-center"><button class="toggle-btn theme-toggle-btn" aria-label="Toggle dark mode"></button><button class="toggle-btn rtl-toggle-btn" aria-label="Toggle direction"></button><a href="login.html" class="btn-custom-secondary btn-text py-2">Login</a></div>
+                <div class="d-flex gap-2 align-items-center"><button class="toggle-btn theme-toggle-btn" aria-label="Toggle dark mode"></button><button class="toggle-btn rtl-toggle-btn" aria-label="Toggle direction">RTL</button><a href="login.html" class="btn-custom-secondary btn-text py-2">Login</a></div>
             </div>
         </div>
     </nav>
@@ -75,7 +75,7 @@
 
             <div class="d-flex flex-column gap-2 mt-4 text-center">
                 <div class="d-flex justify-content-center gap-2 mb-3">
-                    <button class="toggle-btn theme-toggle-btn" aria-label="Toggle dark mode"></button><button class="toggle-btn rtl-toggle-btn" aria-label="Toggle direction"></button>
+                    <button class="toggle-btn theme-toggle-btn" aria-label="Toggle dark mode"></button><button class="toggle-btn rtl-toggle-btn" aria-label="Toggle direction">RTL</button>
                 </div>
                 <a href="login.html" class="btn-custom-secondary btn-text w-100 py-2">Login</a>
             </div>
@@ -100,7 +100,7 @@
                     <!-- Service 1 -->
                     <div class="col-md-6 col-lg-3">
                         <div class="custom-card">
-                            <img src="https://images.unsplash.com/photo-1581291518655-9523c932dedf?auto=format&fit=crop&w=400&q=80" alt="Auditing web interfaces" class="img-fluid rounded mb-3" style="height: 140px; object-fit: cover;">
+                            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Auditing web interfaces" class="img-fluid rounded mb-3" style="height: 140px; object-fit: cover;">
                             <h3 class="h3-title fs-5 mb-3">WCAG 2.2 Auditing</h3>
                             <p class="body-text small text-muted mb-4">Manual and automated testing of your web apps to identify keyboard traps, contrast issues, and layout errors.</p>
                             <a href="service-details.html" class="btn-custom-secondary btn-sm mt-auto">Details</a>
@@ -173,6 +173,90 @@
             </div>
         </section>
 
+        <!-- New Section: My Audit Process -->
+        <section class="bg-light py-5">
+            <div class="container text-center">
+                <h2 class="h2-title mb-2">My Audit Process</h2>
+                <p class="body-text text-muted mb-5 max-width-600 mx-auto">A transparent, step-by-step methodology that takes your platform from discovery to full WCAG compliance.</p>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="p-4 bg-white rounded border hover-card-effect h-100 text-center">
+                            <div class="display-4 mb-3 fw-bold text-primary">01</div>
+                            <h4 class="mb-3">Discovery Call</h4>
+                            <p class="body-text small text-muted mb-0">We align on platform scope, target users, compliance deadlines, and your current accessibility baseline.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="p-4 bg-white rounded border hover-card-effect h-100 text-center">
+                            <div class="display-4 mb-3 fw-bold text-primary">02</div>
+                            <h4 class="mb-3">Manual Audit</h4>
+                            <p class="body-text small text-muted mb-0">I test your live site with keyboard navigation, screen readers (NVDA, VoiceOver), and automated scanners.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="p-4 bg-white rounded border hover-card-effect h-100 text-center">
+                            <div class="display-4 mb-3 fw-bold text-primary">03</div>
+                            <h4 class="mb-3">Remediation Report</h4>
+                            <p class="body-text small text-muted mb-0">You receive a prioritised, developer-ready PDF with exact code fixes mapped to WCAG 2.2 criteria.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="p-4 bg-white rounded border hover-card-effect h-100 text-center">
+                            <div class="display-4 mb-3 fw-bold text-primary">04</div>
+                            <h4 class="mb-3">Re-Audit & Sign-Off</h4>
+                            <p class="body-text small text-muted mb-0">After fixes are deployed, I verify conformance and issue your official compliance certificate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="h2-title text-center mb-3">Frequently Asked Questions</h2>
+                <p class="body-text text-center mb-5 text-muted max-width-600 mx-auto">Common questions about the auditing process, timelines, and developer remediation support.</p>
+                <div class="accordion max-width-800 mx-auto" id="servicesFaq">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqHeadingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="false" aria-controls="faqCollapseOne">
+                                How long does a typical web accessibility audit take?
+                            </button>
+                        </h2>
+                        <div id="faqCollapseOne" class="accordion-collapse collapse" aria-labelledby="faqHeadingOne" data-bs-parent="#servicesFaq">
+                            <div class="accordion-body">
+                                <p class="body-text mb-0 text-muted">A standard audit for a platform with 5 to 10 key templates typically takes 7 to 10 business days. This includes full manual testing across multiple screen readers, keyboard-only validation, and delivering your developer-ready remediation roadmap.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqHeadingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                                Do you write the code fixes yourself, or only provide suggestions?
+                            </button>
+                        </h2>
+                        <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#servicesFaq">
+                            <div class="accordion-body">
+                                <p class="body-text mb-0 text-muted">I do both. I provide a detailed PDF report highlighting each failure, but I also offer direct remediation support. Under this package, I deliver copy-pasteable HTML structure, CSS overrides, and JavaScript focus management scripts directly to your engineering team.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqHeadingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                                Which compliance standards do your audits cover?
+                            </button>
+                        </h2>
+                        <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#servicesFaq">
+                            <div class="accordion-body">
+                                <p class="body-text mb-0 text-muted">My services cover the Web Content Accessibility Guidelines (WCAG) 2.1 and 2.2 at levels A and AA. Meeting these criteria ensures alignment with US regulations like ADA Title III and Section 508, as well as European standards under the European Accessibility Act (EAA).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- 3. Final Call to Action -->
         <section class="bg-light py-5 text-center">
             <div class="container">
@@ -195,7 +279,7 @@
                         <text x="55" y="32" font-family="'Outfit', sans-serif" font-size="20" font-weight="580" fill="currentColor">AccessAudit</text>
                     </svg>
                     <p class="body-text text-muted mb-4">I help companies audit, remediation-manage, and design web systems to follow WCAG 2.2 AA guidelines and ensure complete digital access.</p>
-                    <div class="d-flex gap-3 footer-social-icons"><a href="https://twitter.com" aria-label="Twitter profile" class="text-muted"><i class="bi bi-twitter fs-5"></i></a>
+                    <div class="d-flex gap-3 footer-social-icons"><a href="https://twitter.com" aria-label="Twitter profile" class="text-muted"><i class="bi bi-twitter-x fs-5"></i></a>
                         <a href="https://linkedin.com" aria-label="LinkedIn profile" class="text-muted"><i class="bi bi-linkedin fs-5"></i></a>
                         <a href="https://github.com" aria-label="GitHub profile" class="text-muted"><i class="bi bi-github fs-5"></i></a>
                     </div>
@@ -248,3 +332,4 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+
