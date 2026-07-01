@@ -466,6 +466,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 @media (max-width: 576px) {
     .viewport-fixed-toggles {
+        position: absolute !important;
         top: 0.75rem !important;
         right: 0.75rem !important;
     }
