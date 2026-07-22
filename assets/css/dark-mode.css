@@ -147,3 +147,8 @@
 .dark-theme .btn-close {
     filter: invert(1) grayscale(100%) brightness(200%) !important;
 }
+
+/* Improve checkmark icon visibility inside shield SVG on dark bg (Mitigate Legal Risk card) */
+.dark-theme .icon-checkmark {
+    stroke: #ffffff !important;
+}
